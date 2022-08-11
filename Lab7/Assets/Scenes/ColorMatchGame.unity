@@ -215,6 +215,7 @@ GameObject:
   - component: {fileID: 49225675}
   - component: {fileID: 49225674}
   - component: {fileID: 49225673}
+  - component: {fileID: 49225676}
   m_Layer: 5
   m_Name: HighScoreNum
   m_TagString: Untagged
@@ -323,6 +324,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 49225671}
   m_CullTransparentMesh: 1
+--- !u!114 &49225676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49225671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9efd1dfec0aa864cb6c844cde1a831c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 67fd26db42ebdfa429070fee58d45c84, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 49225673}
+        m_TargetAssemblyTypeName: TextLabelBehavior, Assembly-CSharp
+        m_MethodName: UpdateLabel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 3e42fd85abb965941aa99d97656ecd02, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &201790662
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,6 +1009,7 @@ GameObject:
   - component: {fileID: 914005229}
   - component: {fileID: 914005228}
   - component: {fileID: 914005227}
+  - component: {fileID: 914005231}
   m_Layer: 5
   m_Name: ScoreNum
   m_TagString: Untagged
@@ -1076,6 +1106,34 @@ RectTransform:
   m_AnchoredPosition: {x: 86.3, y: -26}
   m_SizeDelta: {x: 86.48, y: 30}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &914005231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914005226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9efd1dfec0aa864cb6c844cde1a831c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 67fd26db42ebdfa429070fee58d45c84, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 914005227}
+        m_TargetAssemblyTypeName: TextLabelBehavior, Assembly-CSharp
+        m_MethodName: UpdateLabel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: cec4d410e33b2544a9fef1a5a7a2356f, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1439593811
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,6 +1448,7 @@ GameObject:
   - component: {fileID: 1467388983}
   - component: {fileID: 1467388982}
   - component: {fileID: 1467388981}
+  - component: {fileID: 1467388986}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1504,6 +1563,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1467388986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467388980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9efd1dfec0aa864cb6c844cde1a831c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 4ac3cfbcc09eba64dbcf1747f04afb92, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1467388981}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Over
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1654380140
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,6 +2098,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2127697069}
   - component: {fileID: 2127697070}
+  - component: {fileID: 2127697071}
   m_Layer: 0
   m_Name: InstancerGO
   m_TagString: Untagged
@@ -2060,6 +2148,18 @@ MonoBehaviour:
   RepeatUntilFalseEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 11400000, guid: 9ac061a26b9d32746829d441aeb20bf6, type: 2}
+        m_TargetAssemblyTypeName: ColorIDDataList, Assembly-CSharp
+        m_MethodName: SetCurrentColorRandomly
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 11400000, guid: 1ea385478d2e903428ae34e0b6daf3d2, type: 2}
         m_TargetAssemblyTypeName: Instancer, Assembly-CSharp
         m_MethodName: CreateInstanceFromListCounting
@@ -2084,6 +2184,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  counterNum: {fileID: 11400000, guid: 181a74fc063b2734885fae5ee00efdfa, type: 2}
+  counterNum: {fileID: 0}
   canRun: 0
-  seconds: 1
+  seconds: 2
+--- !u!114 &2127697071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127697068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9efd1dfec0aa864cb6c844cde1a831c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 4ac3cfbcc09eba64dbcf1747f04afb92, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2127697070}
+        m_TargetAssemblyTypeName: CoroutineBehavior, Assembly-CSharp
+        m_MethodName: set_CanRun
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
